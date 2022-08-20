@@ -8,6 +8,37 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
+    <section class="task">
+      <h2 class="task__description">
+        Сейчас мы реализуем игру угадай число. В этой игре компьютер загадывает
+        число от 1 до 100. В инпут на экране игрок вводит число от 1 до 100,
+        пытаясь угадать, что же загадал компьютер. Если игрок ввел число, меньше
+        загаданного, компьютер должен написать 'введите число побольше', а если
+        введено больше загаданного, то, соответственно, компьютер должен
+        написать 'введите число поменьше'.
+      </h2>
+
+      <div class="task__keys">
+        <input
+          class="task__input"
+          type="text"
+          name=""
+          id="_input1"
+          value=""
+          placeholder="введите значение..."
+        />
+
+        <!-- <button class="button" id="_answerBtn2">Узнать ответ</button>
+        <button class="button" id="_resetBtn2">Начать заново</button> -->
+
+        <div class="task__asnwer-zone">
+          <p class="task__answer">Ваш ответ: <span id="_span1"></span></p>
+          <!-- <p class="task__answer">
+            Список делителей: <span id="_spanAnswerTask2"></span>
+          </p> -->
+        </div>
+      </div>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
