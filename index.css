@@ -30,16 +30,28 @@
 }
 
 .game__key {
-  border: 1px solid black;
   width: 200px;
   height: 50px;
-  margin: 0 auto 20px;
+  margin: 50px auto 50px;
   font-size: 16px;
 }
 
 .game__value {
   border: 1px solid black;
   width: 350px;
-  margin: 0 auto 20px;
+  height: 60px;
+  margin: 0 auto 30px;
   font-size: 20px;
+}
+
+.game__button {
+  width: 350px;
+  height: 50px;
+  margin: auto;
+  border-radius: 10px;
+  background-color: azure;
+}
+
+.game__button:hover {
+  background-color: rgb(209, 242, 242);
 }

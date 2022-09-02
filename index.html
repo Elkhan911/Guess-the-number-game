@@ -12,9 +12,9 @@
 
     <section class="game">
       <h2 class="game__header">
-        Компьютер загадал число от 1 до 100. Попробуйте угадать. Введите число в
-        текстовое поле и нажмите Enter. Обратите внимание на подсказки после
-        каждого ответа.
+        Компьютер загадал число от 1 до 50. Вам нужно угадать менее чем за 10
+        ходов. Введите число в текстовое поле и нажмите Enter. Обратите внимание
+        на подсказки после каждого ответа.
       </h2>
 
       <textarea
@@ -26,6 +26,11 @@
       ></textarea>
 
       <p class="game__value">Ваш ответ: <span id="_span1"></span></p>
+      <p class="game__value">
+        Количество ваших ходов: <span id="_span2"></span>
+      </p>
+      <p class="game__value">Результат игры: <span id="_span3"></span></p>
+      <button class="game__button">Начать заново</button>
     </section>
     <script src="script.js"></script>
   </body>
