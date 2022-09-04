@@ -51,11 +51,12 @@ input1.addEventListener("keydown", function (event) {
 });
 
 function checkResult() {
-  if (span1.textContent.includes("БИНГО!")) {
-    span3.textContent == "Поздравляем, Вы одолели компьютер";
-    console.log(span1.textContent.includes("БИНГО!"));
+  if (Number(span2.textContent) <= 10 && span1.textContent.includes("БИНГО!")) {
+    span3.textContent = "Поздравляем, Вы одолели компьютер!";
+    input1.setAttribute("disabled", true);
   }
   if (Number(span2.textContent) > 10 && !span1.textContent.includes("БИНГО!")) {
     span3.textContent = `В этот раз вы потерпели поражение. Правильный ответ был: ${computerNumber}`;
+    input1.setAttribute("disabled", true);
   }
 }
